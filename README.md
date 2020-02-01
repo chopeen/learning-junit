@@ -2,7 +2,13 @@
 
 Run the tests with `mvn clean package` or `mvn test`.
 
-## @ValueSource(ints = { 0, 1, 2, 3 })
+## Parameterized tests
+
+`ParameterizedTest` is marked as experimental (`@API(status = EXPERIMENTAL, since = "5.0")`).
+
+### Failing test
+
+Parameters: `@ValueSource(ints = { 0, 1, 2, 3 })`
 
     [INFO] -------------------------------------------------------
     [INFO]  T E S T S
@@ -13,7 +19,9 @@ Run the tests with `mvn clean package` or `mvn test`.
     org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
             at org.chopeen.learning.CalculatorTest.test_getSquare(CalculatorTest.java:20)
 
-## @ValueSource(ints = { 1, 2, 3 })
+### Passing test
+
+Parameters: `@ValueSource(ints = { 1, 2, 3 })`
 
     [INFO] -------------------------------------------------------
     [INFO]  T E S T S
