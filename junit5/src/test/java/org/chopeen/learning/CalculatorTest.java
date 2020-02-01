@@ -17,7 +17,7 @@ public class CalculatorTest {
 
     @DisplayName("Square")
     @ParameterizedTest(name = "Result for `{0}` should be positive")
-    @ValueSource(ints = { 0, 1, 2, 3 })
+    @ValueSource(ints = { 1, 2, 3 })
     public void test_getSquare(int num) {
         assertTrue(calc.getSquare(num) > 0);
     }
