@@ -4,10 +4,8 @@ dist: trusty
 language: java
 jdk: oraclejdk8
 
-install:
+script:
 - mvn clean package -Dcheckstyle.skip=true
-
-test:
 - mvn test -B -Dcheckstyle.skip=true
 
 after_success:
