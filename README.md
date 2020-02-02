@@ -2,6 +2,17 @@
 
 Run the tests with `mvn clean package` or `mvn test`.
 
+## Naming convention
+
+By default, Maven looks for tests to run in files named:
+
+- `Test*.java`
+- `*Test.java`
+- `*Tests.java`
+- `*TestCases.java`
+
+This can be changed in [Surefire configuration](https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html#includes).
+
 ## Parameterized tests in JUnit 5
 
 `ParameterizedTest` is marked as experimental (`@API(status = EXPERIMENTAL, since = "5.0")`).
@@ -126,14 +137,3 @@ Result:
     Results :
 
     Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
-
-## Naming convention
-
-By default, Maven looks for tests to run in files named:
-
-- `Test*.java`
-- `*Test.java`
-- `*Tests.java`
-- `*TestCases.java`
-
-This can be changed in [Surefire configuration](https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html#includes).
