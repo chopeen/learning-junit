@@ -3,5 +3,9 @@ dist: trusty
 
 language: java
 jdk: oraclejdk8
+
+command:
+- mvn clean package -Dcheckstyle.skip=true
+
 after_success:
 - mvn coveralls:report
