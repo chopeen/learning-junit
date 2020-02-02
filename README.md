@@ -1,5 +1,7 @@
 # Learning JUnit
 
+[![Build Status](https://travis-ci.com/chopeen/learning-junit.svg?branch=master)](https://travis-ci.com/chopeen/learning-junit)
+
 Run the tests with `mvn clean package` or `mvn test`.
 
 ## Naming convention
