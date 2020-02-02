@@ -36,3 +36,14 @@ Run the tests with `mvn clean package` or `mvn test`.
 ## Parameterized tests in JUnit 4
 
 ...
+
+## Naming convention
+
+By default, Maven looks for tests to run in files named:
+
+- `Test*.java`
+- `*Test.java`
+- `*Tests.java`
+- `*TestCases.java`
+
+This can be changed in [Surefire configuration](https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html#includes).
