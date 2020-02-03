@@ -139,3 +139,10 @@ Result:
     Results :
 
     Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+## Travis
+
+Checkstyle analysis is part of Travis CI build process. I don't know how to make
+it part of `mvn package` or `mvn test`, but it can be executed manually:
+
+    mvn checkstyle:check
