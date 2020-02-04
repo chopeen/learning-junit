@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.0//EN"
+    "http://checkstyle.sourceforge.net/dtds/suppressions_1_0.dtd">
+
+<!-- https://github.com/ngeor/checkstyle-rules#suppressions -->
+
+<suppressions>
+    <!-- magic numbers in test cases can be tolerated -->
+    <suppress files="Test.java$" checks="MagicNumber" />
+
+    <!-- dummy project, so Javadoc comments are unnecessary -->
+    <suppress files=".java$" checks="JavadocType" />
+    <suppress files=".java$" checks="JavadocMethod" />
+</suppressions>
