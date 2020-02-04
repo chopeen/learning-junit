@@ -1,17 +1,13 @@
 package org.chopeen.learning;
 
-/**
- * Hello world!
- */
 public final class App {
     private App() {
     }
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Calculator calc = new Calculator();
+        int num = 2;
+        String output = String.format("The square of %d is %d", num, calc.getSquare(num));
+        System.out.println(output);
     }
 }
