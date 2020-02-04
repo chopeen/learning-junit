@@ -1,6 +1,5 @@
 package org.chopeen.learning;
 
-
 public final class App {
     private App() {
     }
