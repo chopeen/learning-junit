@@ -12,4 +12,8 @@
     <!-- dummy project, so Javadoc comments are unnecessary -->
     <suppress files=".java$" checks="JavadocType" />
     <suppress files=".java$" checks="JavadocMethod" />
+
+    <!-- `Organize Imports` in VS Code is not compatile with the Checkstyle rules
+         related issue in IntelliJ: https://github.com/checkstyle/checkstyle/issues/5510 -->
+    <suppress files=".java$" checks="ImportOrder" />
 </suppressions>
